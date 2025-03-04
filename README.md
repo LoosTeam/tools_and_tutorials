@@ -1,4 +1,6 @@
-# Repository with information on tools and tutorials for running them on Esrum
+# Tools and tutorials
 
-The goal of this repository is to document all the tools available in the `loos_group-AUDIT` folder on Esrum. You can find information on the tools and tutorials to run them under the different folders in this repository.
+The goal of this repository is to document all the tools made available specifically in the `loos_group-AUDIT` folder on [Esrum](https://cbmr-data.github.io/esrum/). You can find information on the tools and tutorials to run them under the different folders in this repository.
 
+## List of tools available
+- [Polygenic Priority Score (PoPS) v0.2](PoPS)
