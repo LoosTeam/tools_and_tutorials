@@ -27,7 +27,7 @@ magma
 ```
 
 ## Run step 0: Munge features
-This step processes the feature files and and converts them into a more efficient format for downstream usage. This command can be run as is, without any modifications.
+This step processes the feature files and and converts them into a more efficient format for downstream usage. This command can be run as is, without any modifications. This step outputs several feature files with suffix `.txt` and `.npy`. 
 
 This step can be run using the script [step_0.sh](scripts/step_0.sh). 
 
@@ -49,7 +49,7 @@ munge_feature_directory.py \
 MAGMA is performed in 2 steps, and the parameters shown here are specific to running PoPS.  
 
 ### Step 1.1 MAGMA `annotation`
-The first step is a pre-processing step, which maps SNPs to genes. The mapping is based on genomic location, assigning a SNP to a gene if the SNP’s location falls inside the region provided for each gene; typically this region is defined by the transcription start and stop sites of that gene. 
+The first step is a pre-processing step, which maps SNPs to genes. The mapping is based on genomic location, assigning a SNP to a gene if the SNP’s location falls inside the region provided for each gene; typically this region is defined by the transcription start and stop sites of that gene. This step outputs a `.genes.annot` file.
 
 This step can be run using the script [step_1.1.sh](scripts/step_1.1.sh). 
 ```
@@ -69,9 +69,7 @@ magma \
 
 ### Step 1.2 MAGMA `gene analysis`
 
-In the gene analysis step the gene p-values and other gene-level metrics are computed. The gene analysis results are output into a formatted output file with .genes.out suffix. The same results plus gene correlations with neighbouring genes are stored in a .genes.raw file
-
- 
+In the gene analysis step the gene p-values and other gene-level metrics are computed. The gene analysis results are output into a formatted output file with `.genes.out` suffix. The same results plus gene correlations with neighbouring genes are stored in a `.genes.raw` file.
 
 This step can be run using the script [step_1.2.sh](scripts/step_1.2.sh). 
 ```
@@ -94,7 +92,7 @@ magma \
 
 ## Run step 2: Run PoPS
 
-PoPS has several flags that can be modified, refer to [this section](#loading-modules) for help.
+PoPS has several flags that can be modified, refer to [this section](#loading-modules) for help. This step outputs 3 files; `.coefs`, `.marginals`, and `.preds` files.
 
 ```
 pops.py \
