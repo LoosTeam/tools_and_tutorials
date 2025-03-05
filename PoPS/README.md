@@ -1,9 +1,8 @@
 # Tutorial for running PoPS on Esrum
+
 PoPS is a gene prioritization method that can be applied to GWAS summary statistics. You can find the official Github [here](https://github.com/FinucaneLab/pops), and the publication [here](https://doi.org/10.1038/s41588-023-01443-6).
 
-PoPS has been made availble as an environment module in the `loos_group-AUDIT` folder on Esrum. This tutorial describes how you can load PoPS and associated tools, and run the program from start to finish. You can find the tutorial scripts at `/projects/loos_group-AUDIT/data/tutorials/pops_tutorial/`
-
-> ✏️ **_NOTE:_** Please note that you need to be added to the `loos_group-AUDIT` folder on [Esrum](https://cbmr-data.github.io/esrum/) to be able to access and run this tool as demonstrated here. If you have not already been added to this folder, then [contact me](#contact) for help. 
+PoPS has been made availble as an environment module in the `loos_group-AUDIT` folder on Esrum. This tutorial describes how you can load PoPS and associated tools, and run the program from start to finish. You can find the tutorial scripts at `/projects/loos_group-AUDIT/data/tutorials/pops_tutorial/`.
 
 The data used for this tutorial is a set of publicly available summary statistics for schizophrenia, same as that used in the paper. PoPS is run in 3 steps - 
 
@@ -117,9 +116,3 @@ pops.py \
 | --control_features_path | Optional path to list of features (one per line) to always include |
 | --out_prefix | Prefix that results will be saved with. Will write out a .preds, .coefs, and .marginals file |
 | --verbose | Set this flag to get verbose output |
-
-# Contact
-Please contact me if you need help or have any suggestions/feedback/ideas :)
-
-**Siddhi Jain**
-siddhi.jain@sund.ku.dk
