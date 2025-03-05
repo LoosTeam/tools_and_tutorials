@@ -55,7 +55,7 @@ This step can be run using the script [step_1.1.sh](scripts/step_1.1.sh).
 ```
 magma \
  --annotate \
- --snp-loc example_data/Schizophrenia_sumstats.txt \
+ --snp-loc /projects/loos_group-AUDIT/data/tutorials/example_data/Schizophrenia_sumstats.txt \
  --gene-loc /projects/loos_group-AUDIT/data/tool_data/pops_data/gene_annot_jun10_modified.txt \
  --out outputs/magma_annot_Schizophrenia
 ```
@@ -76,7 +76,7 @@ This step can be run using the script [step_1.2.sh](scripts/step_1.2.sh).
 magma \
  --bfile /projects/loos_group-AUDIT/data/tool_data/magma_data/ref_panels/1000g/g1000_eur/g1000_eur \
  --gene-annot outputs/magma_annot_Schizophrenia.genes.annot \
- --pval example_data/Schizophrenia_sumstats.txt N=65967 \
+ --pval /projects/loos_group-AUDIT/data/tutorials/example_data/Schizophrenia_sumstats.txt N=65967 \
  --gene-model snp-wise=mean \
  --out outputs/magma_gene_anal_Schizophrenia
 ```
