@@ -4,3 +4,5 @@ The goal of this repository is to document all the tools made available specific
 
 ## List of tools available
 - [Polygenic Priority Score (PoPS) v0.2](PoPS)
+- MAGMA
+- [FLAMES](FLAMES)
