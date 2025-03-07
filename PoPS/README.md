@@ -2,7 +2,7 @@
 
 PoPS is a gene prioritization method that can be applied to GWAS summary statistics. You can find the official Github [here](https://github.com/FinucaneLab/pops), and the publication [here](https://doi.org/10.1038/s41588-023-01443-6).
 
-PoPS has been made availble as an environment module in the `loos_group-AUDIT` folder on Esrum. This tutorial describes how you can load PoPS and associated tools, and run the program from start to finish. You can find the tutorial scripts at `/projects/loos_group-AUDIT/data/tutorials/pops_tutorial/`.
+PoPS has been made available as an environment module in the `loos_group-AUDIT` folder on Esrum. This tutorial describes how you can load PoPS and associated tools, and run the program from start to finish. You can find the tutorial scripts at `/projects/loos_group-AUDIT/data/tutorials/pops_tutorial/`.
 
 The data used for this tutorial is a set of publicly available summary statistics for schizophrenia, same as that used in the paper. PoPS is run in 3 steps - 
 
