@@ -10,6 +10,6 @@ FLAMES method builds on the result files from PoPS and MAGMA, so please refer to
     - `.genes.annot` file from MAGMA **annotation** step
     - `.genes.out` file from MAGMA **gene analysis** step
     - `.genes.raw` file from MAGMA **gene analysis** step
-    - `.` file from MAGMA **gene level analysis** step
+    - `.gsa.out` file from MAGMA **gene level analysis** step
 2. From PoPS: 
     - `.preds` file with the PoPS scores from the final PoPS step
