@@ -4,6 +4,10 @@ The goal of this repository is to document all the tools made available specific
 
 > ✏️ **_NOTE:_** Please note that you need to be added to the `loos_group-AUDIT` folder on [Esrum](https://cbmr-data.github.io/esrum/) to be able to access and run the tools described in this repository. If you have not already been added to this folder, then [contact me](#contact) for help. 
 
+## How to use the tutorials
+
+Once you have been added to the `loos_group-AUDIT` folder, you will have a personal folder available inside `/projects/loos_group-AUDIT/people/` with your KU username. This folder is only accessible by you, and it is the recommended folder to perform analysis and store data. 
+
 ## List of tools available
 - [Polygenic Priority Score (PoPS) v0.2](PoPS)
 - MAGMA
