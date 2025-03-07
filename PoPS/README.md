@@ -111,6 +111,6 @@ pops.py \
 | --feature_mat_prefix | Prefix to the split feature matrix files, such as those outputted by munge_feature_directory.py. There must be .mat.*.npy files, .cols.*.txt files, and a .rows.txt file |
 | --num_feature_chunks | The number of feature matrix chunks, such as those outputted by munge_feature_directory.py |
 | --magma_prefix | Prefix to the gene-level association statistics outputted by MAGMA. There must be a .genes.out file and a .genes.raw file |
-| --control_features_path | Optional path to list of features (one per line) to always include |
+| --control_features_path | Optional path to list of features (one per line) to always include. You can create a copy of the file  `features_jul17_control.txt` to your directory and modify it to select specific features. |
 | --out_prefix | Prefix that results will be saved with. Will write out a .preds, .coefs, and .marginals file |
 | --verbose | Set this flag to get verbose output |

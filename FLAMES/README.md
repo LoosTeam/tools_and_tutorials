@@ -6,7 +6,10 @@ FLAMES has been made available as an environment module in the `loos_group-AUDIT
 
 FLAMES method builds on the result files from PoPS and MAGMA, so please refer to those tutorials before your run FLAMES. You will need the following files-
 
-1. From PoPS: 
-    - `.preds` file with the PoPS scores
-2. From MAGMA:
-    - `.genes.out` file with gene analysis Z-scores from MAGMA **annotation** step
+1. From MAGMA:
+    - `.genes.annot` file from MAGMA **annotation** step
+    - `.genes.out` file from MAGMA **gene analysis** step
+    - `.genes.raw` file from MAGMA **gene analysis** step
+    - `.` file from MAGMA **gene level analysis** step
+2. From PoPS: 
+    - `.preds` file with the PoPS scores from the final PoPS step
