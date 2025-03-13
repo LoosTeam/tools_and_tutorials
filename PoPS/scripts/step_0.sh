@@ -14,6 +14,6 @@ mkdir outputs
 
 #Remember to update paths for files
 munge_feature_directory.py \
- --gene_annot_path /projects/loos_group-AUDIT/data/pops_data/gene_annot_jun10.txt \
+ --gene_annot_path /projects/loos_group-AUDIT/data/tool_data/pops_data/gene_annot_jun10.txt \
  --save_prefix outputs/pops_features \
  --max_cols 500

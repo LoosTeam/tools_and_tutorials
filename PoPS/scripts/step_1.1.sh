@@ -14,5 +14,5 @@ cd /projects/loos_group-AUDIT/data/pops_tutorial/
 magma \
  --annotate \
  --snp-loc example_data/Schizophrenia_sumstats.txt \
- --gene-loc /projects/loos_group-AUDIT/data/pops_data/gene_annot_jun10_modified.txt \
+ --gene-loc /projects/loos_group-AUDIT/data/tool_data/pops_data/gene_annot_jun10_modified.txt \
  --out outputs/magma_annot_Schizophrenia

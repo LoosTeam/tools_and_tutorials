@@ -12,7 +12,7 @@ cd /projects/loos_group-AUDIT/data/pops_tutorial/
 
 #Remember to update paths for files
 magma \
- --bfile /projects/loos_group-AUDIT/data/magma_data/ref_panels/1000g/g1000_eur/g1000_eur \
+ --bfile /projects/loos_group-AUDIT/data/tool_data/magma_data/ref_panels/1000g/g1000_eur/g1000_eur \
  --gene-annot outputs/magma_annot_Schizophrenia.genes.annot \
  --pval example_data/Schizophrenia_sumstats.txt N=65967 \
  --gene-model snp-wise=mean \

@@ -13,10 +13,10 @@ cd /projects/loos_group-AUDIT/data/pops_tutorial/
 
 #Remember to update paths for files
 pops.py \
- --gene_annot_path /projects/loos_group-AUDIT/data/pops_data/gene_annot_jun10.txt \
+ --gene_annot_path /projects/loos_group-AUDIT/data/tool_data/pops_data/gene_annot_jun10.txt \
  --feature_mat_prefix outputs/pops_features \
  --num_feature_chunks 116 \
  --magma_prefix outputs/magma_gene_anal_Schizophrenia \
- --control_features_path /projects/loos_group-AUDIT/data/pops_data/features_jul17_control.txt \
+ --control_features_path /projects/loos_group-AUDIT/data/tool_data/pops_data/features_jul17_control.txt \
  --out_prefix outputs/pops_out_Schizophrenia \
  --verbose
