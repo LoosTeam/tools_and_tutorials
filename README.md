@@ -11,9 +11,10 @@ Once you have been added to the `loos_group-AUDIT` folder, you will have a perso
 You can copy over the scripts from `/projects/loos_group-AUDIT/data/tutorials/` to your personal folder and modify the paths to your files. The paths to tool-specific data do not need to be modified, as this data is stored in a commonly accessible folder i.e., `/projects/loos_group-AUDIT/data/tool_data/`. Please refrain from modifying the original tool data and template scripts.
 
 ## List of tools available
-- [Polygenic Priority Score (PoPS) v0.2](PoPS)
+- [Polygenic Priority Score (PoPS) v0.2](PoPS/README.md)
 - MAGMA
-- [Fine-mapped Locus Assessment Model of Effector geneS (FLAMES) v.1.1.2](FLAMES)
+- [Fine-mapped Locus Assessment Model of Effector geneS (FLAMES) v.1.1.2](FLAMES/README.md)
+- [RSIDBuildTranslator](RSIDBuildTranslator) - A tool to add 
 
 
 # Contact
