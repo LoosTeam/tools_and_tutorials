@@ -1,4 +1,4 @@
-# Tutorial for running RSIDBuildTranlator on Esrum
+# Tutorial for running RSIDBuildTranslator on Esrum
 
 Find official documentation [here](https://github.com/siddhijain25/RSIDBuildTranslator).
 
