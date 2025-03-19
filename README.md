@@ -15,7 +15,7 @@ You can copy over the scripts from `/projects/loos_group-AUDIT/data/tutorials/` 
 - MAGMA
 - [Fine-mapped Locus Assessment Model of Effector geneS (FLAMES) v.1.1.2](FLAMES/README.md)
 - [SBayesRC](SBayesRC/README.md)
-- [RSIDBuildTranslator](RSIDBuildTranslator/README.md) - A tool to that annotates genetic data with rsIDs, or chromosome and position from GRCh37 or GRCh38, using whichever is available in your data.
+<!-- - [RSIDBuildTranslator](RSIDBuildTranslator/README.md) - A tool to that annotates genetic data with rsIDs, or chromosome and position from GRCh37 or GRCh38, using whichever is available in your data. -->
 
 
 # Contact
