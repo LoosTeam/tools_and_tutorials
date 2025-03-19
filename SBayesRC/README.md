@@ -15,13 +15,13 @@ rs1002 C G 0.0306 0.0034 0.0115 0.7659 129799
 rs1003 A C 0.5128 0.0045 0.0038 0.2319 129830
 ```
 
-SNP name should match LD reference. If you are using LD data provided by SBayesRC, then your `SNP` column should be **rsIDs**. 
+SNP ids should match the LD reference. If you are using LD data provided by SBayesRC, then your `SNP` column should be **rsIDs**. 
 
 ## Other inputs
 
-* `ld_folder` is a folder contains the eigen-decomposition data for each LD block, available at `/projects/loos_group-AUDIT/data/tool_data/sbayesrc_data/SBayesRCv2/LD/`. If you want to generate your own LD panel, refer to official documentation.
+* `ld_folder` is a folder that contains the eigen-decomposition data for each LD block. All panels provided by SBayesRC are available at `/projects/loos_group-AUDIT/data/tool_data/sbayesrc_data/SBayesRCv2/LD/`. If you want to generate your own LD panel, refer to official documentation.
 
-* `annot` is the annotation file, with columns being SNP ID, Intercept (a column of one), and annotation values (it's best to use TAB delimited text file). Available at `/projects/loos_group-AUDIT/data/tool_data/sbayesrc_data/SBayesRCv2/Annotation/annot_baseline2.2.txt`:
+* `annot` is the annotation file, with columns being SNP ID, Intercept (a column of one), and annotation values (it's best to use TAB delimited text file). File available at `/projects/loos_group-AUDIT/data/tool_data/sbayesrc_data/SBayesRCv2/Annotation/annot_baseline2.2.txt`:
 
 ```{r, eval=FALSE, indent="   "}
 SNP Intercept Coding Conserved CTCF
@@ -58,6 +58,7 @@ output_file="$output_dir/name_for_output_file"
 ### SBayesRC step 1 : Tidy
 
 ```bash
+#Step 1 : Tidy
 singularity run --bind $(pwd),"$input_dir","$output_dir","$ld_folder" --pwd $(pwd) \
 /projects/loos_group-AUDIT/apps/dockerimages/sbayesrc.sif --ldm-eigen "$ld_folder" --gwas-summary "$ma_file" --impute-summary --out "$output_file"  --threads 4
 ```
@@ -65,6 +66,7 @@ singularity run --bind $(pwd),"$input_dir","$output_dir","$ld_folder" --pwd $(pw
 ### SBayesRC step 2 : Main
 
 ```bash
+#Step 2 : Main
 singularity run --bind $(pwd),"$input_dir","$output_dir","$ld_folder","$annot" --pwd $(pwd) \
 /projects/loos_group-AUDIT/apps/dockerimages/sbayesrc.sif --ldm-eigen "$ld_folder" --gwas-summary "$output_file".imputed.ma --sbayes RC --annot "$annot" --out "$output_file" --threads 4
 ```
