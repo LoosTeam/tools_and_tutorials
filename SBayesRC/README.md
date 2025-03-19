@@ -32,6 +32,8 @@ rs1003 1 0 0 0
 
 ## Running SBayesRC
 
+You can find the example script under `/projects/loos_group-AUDIT/data/tutorials/sbayesrc_tutorial/scripts/run_sbayesrc.sh` and also [here](scripts/run_sbayesrc.sh).
+
 Load required modules:
 
 ```bash
