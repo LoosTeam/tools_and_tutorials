@@ -29,3 +29,23 @@ rs1001 1 0 0 1
 rs1002 1 0 1 0
 rs1003 1 0 0 0
 ```
+
+## Running SBayesRC
+
+Load required modules:
+
+```bash
+module load --auto singularity
+```
+
+Write SBayesRC parameters:
+
+```bash
+#SBayesRC settings
+ma_file="$output_dir/modified_file.txt"                                         # GWAS summary in COJO format (the only input)
+ld_folder="/projects/loos_group-AUDIT/people/qzt831/ukb_gwas/data/LD/ukbEUR_Imputed"            # LD reference (download from "Resources")
+annot="/projects/loos_group-AUDIT/people/qzt831/ukb_gwas/data/LD/annot_baseline2.2.txt"         # Functional annotation (download from "Resources")
+#out_prefix="$output_file"                                       # Output prefix, e.g. "./test"
+threads=4                                                           # Number of CPU cores
+
+```
