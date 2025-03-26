@@ -16,6 +16,7 @@ You can copy over the scripts from `/projects/loos_group-AUDIT/data/tutorials/` 
 - [Fine-mapped Locus Assessment Model of Effector geneS (FLAMES) v.1.1.2](FLAMES/README.md)
 - [SBayesRC](SBayesRC/README.md)
 - [RSIDBuildTranslator](RSIDBuildTranslator/README.md) - A tool to that annotates genetic data with rsIDs, or chromosome and position from GRCh37 or GRCh38, using whichever is available in your data.
+- [LDSC](LDSC/README.md) - LDSC is a command line tool for estimating heritability and genetic correlation from GWAS summary statistics. LDSC also computes LD Scores.
 
 
 # Contact
