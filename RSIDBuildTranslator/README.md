@@ -1,4 +1,4 @@
-<!-- # Tutorial for running RSIDBuildTranslator on Esrum
+# Tutorial for running RSIDBuildTranslator on Esrum
 
 Find official documentation [here](https://github.com/siddhijain25/RSIDBuildTranslator).
 
@@ -10,4 +10,4 @@ module load RSIDBuildTranslator
 RSIDBuildTranslator -h
 ```
 
-For details about usage and examples, please refer to the official documentation. -->
+For details about usage and examples, please refer to the official documentation.
