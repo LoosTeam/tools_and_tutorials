@@ -45,7 +45,7 @@ Here is an example bash script to run cS2G:
 module purge
 module load R/4.5.1 --auto
 
-Rscript /projects/loos_group-AUDIT/data/tool_data/cS2G_data/script/S2G_v2.R /projects/loos_group-AUDIT/data/tutorials/cS2G_tutorial/scripts/configuration_file_S2G.txt
+Rscript /projects/loos_group-AUDIT/data/tool_data/cS2G_data/script/S2G_v2.R /projects/loos_group-AUDIT/data/tutorials/cS2G_tutorial/scripts/config_file_cS2G.txt
 
 ```
 
