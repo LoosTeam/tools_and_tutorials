@@ -4,14 +4,17 @@ cS2G is SNP-to-gene linking tool, which combines the strategies from many tools 
 
 cS2G tool is available as an R script on Esrum along with all the data needed to run the tool, courtesy of [Raquel Sanz Martinez](mailto:raquel.martinez@sund.ku.dk) from the Kilpelainen group. 
 
-To run cS2G, you need a list of coordinates for the variants you would like to investigate in GRCh37 (hg19), and a config file. The Rscript that performs cS2G does not need to be modified.
+To run cS2G, you need a list of coordinates in GRCh37 (hg19) for the variants you would like to investigate, and a config file. The Rscript that performs cS2G does not need to be modified.
 
 ## Install R libraries
 
 You need to first make sure that you have the following R libraries installed in your home folder:
 
 ```
-install.packages(c("tidyverse", "dplyr", "GenomicRanges", "biomaRt", "data.table"))
+install.packages(c("tidyverse", "dplyr", "data.table", "BiocManager"))
+BiocManager::install("GenomicRanges")
+BiocManager::install("biomaRt")
+
 ```
 
 You can refer to [official Esrum documentation](https://cbmr-data.github.io/esrum/tips/r.html#installing-r-modules) for help with doing this.
@@ -20,7 +23,7 @@ You can refer to [official Esrum documentation](https://cbmr-data.github.io/esru
 
 The config file needs to have the following parameters, in exactly this sequence:
 
- 1. Specify the path to the file with the coordinates for the variants. The name of the column should be `Coord` and the positions should be in the format `chr:position`. Optionally, there can also be a second column called `PIP` for fine mapped variants.
+ 1. Specify the path to the tabular file with the coordinates for the variants. The name of the column should be `Coord` and the positions should be in the format `chr:position`. Optionally, there can also be a second column called `PIP` for fine mapped variants.
  2. Indicate whether the input variants are fine-mapped variants or not (specify YES or NO). NO is set as default.
  3. Indicate the normalised cS2G score threshold for gene prioritization. It must be a numeric value between 0 and 1. `>0.5` is set as default to be sure that the SNP has only one candidate causal gene (best gene approach).
  4. Indicate whether you want to output all the SNP-Gene links (without any filtering). YES is set as default.
@@ -40,7 +43,7 @@ Here is an example bash script to run cS2G:
 #SBATCH --mail-user=xxxxxx@ku.dk --mail-type=END,FAIL
 
 module purge
-module load R --auto
+module load R/4.5.1 --auto
 
 Rscript /projects/loos_group-AUDIT/data/tool_data/cS2G_data/script/S2G_v2.R /projects/loos_group-AUDIT/data/tutorials/cS2G_tutorial/scripts/configuration_file_S2G.txt
 
